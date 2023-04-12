@@ -328,6 +328,7 @@ main p {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-bottom: 3rem;
 }
 
 .team_card_header {
@@ -430,10 +431,10 @@ a:visited {
     opacity: 50%;
 }
 
-/****************************************** STARTED W KUCRA **********************************************/
+/****************************************** PARALLAX **********************************************/
 
 #parallax {
-    background-image:url(/Kucra/assets/img/parallax.png);
+    background-image:url(/assets/img/parallax.png);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -525,7 +526,11 @@ a:visited {
 
 .swiper {
     width: 70%;
-    height: 40%;
+    height:fit-content;
+}
+
+.swiper-wrapper {
+    margin:2rem 0;
 }
 
 .swiper-slide {
@@ -683,6 +688,12 @@ a:visited {
     font-weight: 600;
     color:rgb(106, 139, 189);
     text-align: start;
+    width: fit-content;
+    transition:.5s;
+}
+
+.blog_card a:hover {
+    transform: translate(5px)
 }
 
 .blog_card_header {
@@ -773,10 +784,8 @@ a:visited {
 
 #container_pricing_header_text {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 45%;
-
+    width:45%;
+    gap:2rem;
 }
 
 #pricing img {
@@ -1203,45 +1212,7 @@ position: absolute;
         width:auto;
     }
 
-    /******************************** TEAM ******************************************/
-
-    #team h2 {
-        width:90%;
-        margin-top: 10%;
-    }
-
-    #team h2+p {
-        width:90%;
-    }
-
-    #milestones {
-        align-items: flex-start;
-        margin-top: 5%;
-    }
-
-    #portraits {
-        flex-direction: column;
-    }
-
-    .team_card_header {
-        display: flex;
-        margin:auto;    
-    }
-
-    .team_card_header img {
-        filter:grayscale(0)
-    }
-
-    .social_medias_logo_team {
-        top:30%;
-        left:6%;
-    }
-
-    .team_card_{
-        margin:5% auto;
-    }
-
-    /******************************** PARALLAX ******************************************/
+    /******************************** STARTED W KUCRA ******************************************/
 
     #started_w_kucra p {
         width: 85%;
