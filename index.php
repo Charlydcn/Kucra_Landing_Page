@@ -409,6 +409,14 @@
                 ?>
                     <div class="forfait_card">
 
+                        <?php
+
+                        if ($pricing['sale'] != 0) {
+                            echo "<aside class='sale_box'><p>" . $pricing['sale'] . "% sale</p></aside>";
+                        }
+
+                        ?>
+
                         <h4><?= $pricing['name'] ?></h4>
 
                         <div class="price">
