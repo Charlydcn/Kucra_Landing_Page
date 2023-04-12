@@ -444,11 +444,7 @@
                                     <p>
                                         <?php
 
-                                        if ($pricing['online_space'] < 100) {
-                                            $dataType = "GB";
-                                        } else {
-                                            $dataType = "MB";
-                                        }
+                                        $pricing['online_space'] < 100 ? $dataType = "GB" : $dataType = "MB";
 
                                         echo $pricing['online_space'] . $dataType;
 
