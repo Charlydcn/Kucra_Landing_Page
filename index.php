@@ -1,5 +1,8 @@
+<?php require 'db-functions.php'; ?>
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js" async></script>
     <title>Accueil</title>
 </head>
@@ -38,10 +41,10 @@
                             <li><a href="#team" class="nav_text">ABOUT</a></li>
                             <li><a href="#blog" class="nav_text">BLOG</a></li>
                             <li><a href="#started_w_kucra" class="nav_text">CONTACT</a></li>
-                        <ul>
-                            
+                            <ul>
+
                     </div>
-    
+
                     <div id="nav_social">
 
                         <ul>
@@ -55,7 +58,7 @@
                 </nav>
 
             </div>
-            
+
             <nav id="nav_default">
                 <div id="nav_links">
                     <ul>
@@ -67,7 +70,7 @@
                         <li><a href="#team" class="nav_text">ABOUT</a></li>
                         <li><a href="#blog" class="nav_text">BLOG</a></li>
                         <li><a href="#started_w_kucra" class="nav_text">CONTACT</a></li>
-                    <ul>
+                        <ul>
                 </div>
 
                 <div id="nav_social">
@@ -81,638 +84,573 @@
 
         </header>
 
-            <main> 
+        <main>
 
-                <div id="container_mainpage">
+            <div id="container_mainpage">
 
-                    <img src="assets/illustration.svg" alt="image_ordinateur_clique" id="home_cat">  
+                <img src="assets/illustration.svg" alt="image_ordinateur_clique" id="home_cat">
 
-                    <div id="intro">
+                <div id="intro">
 
-                        <h1>We are StartUp Creative Kucra Agency</h1>
-                
-                        <p>Carefully crafted after analysing the needs of different industries and the design achieves a great balance between purpose & presentation</p>
-                        
-                        <div id="mail_sub">
+                    <h1>We are StartUp Creative Kucra Agency</h1>
 
-                            <form action="submit">
-                                <input type="text" id="mail" placeholder="Enter your email" autocomplete="off">
-                            </form>
+                    <p>Carefully crafted after analysing the needs of different industries and the design achieves a great balance between purpose & presentation</p>
 
-                            <button><a href="index.html">SUBSCRIBE</a></button>
+                    <div id="mail_sub">
 
-                        </div>
+                        <form action="submit">
+                            <input type="text" id="mail" placeholder="Enter your email" autocomplete="off">
+                        </form>
+
+                        <button><a href="index.html">SUBSCRIBE</a></button>
 
                     </div>
 
                 </div>
+
+            </div>
 
 
     </div>
-                <div id="products_features">
 
-                    <h2>Products Features</h2>
-            
-                    <p>It is a long established fact that a reader will be of a page when established fact looking at its layout</p>
+    <div id="products_features">
 
-                    <div id="article_container">
+        <h2>Products Features</h2>
 
-                        <article class="products_features">
-                            <i class="fa-solid fa-globe"></i>
-                            <h3>Digital Design</h3>
-                            <p>Some quick example test to build on the card title and make up the bulk of the card the platform.</p>
-                        </article>
-    
-                        <article class="products_features">
-                            <i class="fa-solid fa-brush"></i>
-                            <h3>Unlimited Colors</h3>
-                            <p>Credibily brand stanoods compliant user exteible services College Anibh Ocean euismod tincudunt laareet.</p>
-                        </article>
-    
-                        <article class="products_features">
-                            <i class="fa-solid fa-chess"></i>
-                            <h3>Strategy Solutions</h3>
-                            <p>Separated they live in Bookmarks grove right at the coast of the Semantics, a large ocean regelialia.</p>
-                        </article>
+        <p>It is a long established fact that a reader will be of a page when established fact looking at its layout</p>
 
-                    </div>
+        <div id="article_container">
 
-                    
-                </div>
+            <article class="products_features">
+                <i class="fa-solid fa-globe"></i>
+                <h3>Digital Design</h3>
+                <p>Some quick example test to build on the card title and make up the bulk of the card the platform.</p>
+            </article>
 
-                <div id="howitworks">
-                    <h2>How It Works ?</h2>
-                    <p>It is a long established fact that a reader will be of a page established fact looking at its layout.</p>
-                </div>
+            <article class="products_features">
+                <i class="fa-solid fa-brush"></i>
+                <h3>Unlimited Colors</h3>
+                <p>Credibily brand stanoods compliant user exteible services College Anibh Ocean euismod tincudunt laareet.</p>
+            </article>
 
-                <div id="team">
+            <article class="products_features">
+                <i class="fa-solid fa-chess"></i>
+                <h3>Strategy Solutions</h3>
+                <p>Separated they live in Bookmarks grove right at the coast of the Semantics, a large ocean regelialia.</p>
+            </article>
 
-                    <h2>We're dynamic team of talented people of innovative & marketing expert</h2>
-                    <p>To achieve this, it would be necessary to have uniform grammar, pronunciation and more commun words,
-                         if several languages of the resulting language.</p>
+        </div>
 
-                    <div id="milestones">
 
-                        <article>
-                            <h4>1499+</h4>
-                            <p>Complete Projects</p>
-                        </article>
+    </div>
 
-                        <article>
-                            <h4>1080K</h4>
-                            <p>Satisfied Clients</p>                            
-                        </article>
+    <div id="howitworks">
+        <h2>How It Works ?</h2>
+        <p>It is a long established fact that a reader will be of a page established fact looking at its layout.</p>
+    </div>
 
-                        <article>
-                            <h4>608</h4>
-                            <p>Team Members</p>                            
-                        </article>
+    <div id="team">
 
-                        <article>
-                            <h4>252</h4>
-                            <p>Employees</p>                            
-                        </article> 
+        <h2>We're dynamic team of talented people of innovative & marketing expert</h2>
+        <p>To achieve this, it would be necessary to have uniform grammar, pronunciation and more commun words,
+            if several languages of the resulting language.</p>
 
-                    </div>
+        <div id="milestones">
 
-                    <div id="portraits">
-                        <div class="team_card">
-                            <div class="team_card_header">
-                                <img src="assets/img/person1.png" alt="Anna G. Wilhite">
-                                <div class="social_medias_logo_team">
-                                    <a href="https://facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
-                                    <a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
-                                    <a href="https://google.com"><i class="fa-brands fa-skype"></i></a>
-                                </div>
-                            </div>
-                            <div class="card-text">
-                                <h5>Anna G. Wilhite</h5>
-                                <p>CEO/Founder<p>
-                            </div>
-                        </div>
-                        <div class="team_card">
-                            <div class="team_card_header">
-                                <img src="assets/img/person2.png" alt="William S. Blay">
-                                <div class="social_medias_logo_team">
-                                    <a href="https://facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
-                                    <a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
-                                    <a href="https://google.com"><i class="fa-brands fa-skype"></i></a>
-                                </div>
-                            </div>
-                            <div class="card-text">
-                                <h5>William S. Blay</h5>
-                                <p>CTO/Co-Founder<p>
-                            </div>
-                        </div>
-                        <div class="team_card">
-                            <div class="team_card_header">
-                                <img src="assets/img/person3.png" alt="Maria B. Morales">
-                                <div class="social_medias_logo_team">
-                                    <a href="https://facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
-                                    <a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
-                                    <a href="https://google.com"><i class="fa-brands fa-skype"></i></a>
-                                </div>
-                            </div>
-                            <div class="card-text">
-                                <h5>Maria B. Morales</h5>
-                                <p>Web Designer<p>
-                            </div>
-                        </div>
-                        <div class="team_card">
-                            <div class="team_card_header">
-                                <img src="assets/img/person4.png" alt="Luke L. Johnston">
-                                <div class="social_medias_logo_team">
-                                    <a href="https://facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
-                                    <a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
-                                    <a href="https://google.com"><i class="fa-brands fa-skype"></i></a>
-                                </div>
-                            </div>
-                            <div class="card-text">
-                                <h5>Luke L. Johnston</h5>
-                                <p>Web Developer<p>
-                            </div>
-                        </div>
+            <article>
+                <h4>1499+</h4>
+                <p>Complete Projects</p>
+            </article>
+
+            <article>
+                <h4>1080K</h4>
+                <p>Satisfied Clients</p>
+            </article>
+
+            <article>
+                <h4>608</h4>
+                <p>Team Members</p>
+            </article>
+
+            <article>
+                <h4>252</h4>
+                <p>Employees</p>
+            </article>
+
+        </div>
+
+        <div id="portraits">
+            <div class="team_card">
+                <div class="team_card_header">
+                    <img src="assets/img/person1.png" alt="Anna G. Wilhite">
+                    <div class="social_medias_logo_team">
+                        <a href="https://facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://google.com"><i class="fa-brands fa-skype"></i></a>
                     </div>
                 </div>
-
-                <div id="started_w_kucra">      
-
-                    <h3>Let's get started with Kucra</h3>
-                    <p>They are a good way to get you started if you want to build something similar or use from existing apps
-                    which will reduce the cost, efforts and time of the developers.
-                    </p>
-                    <button><a href="">Get Started</a></button>
-
+                <div class="card-text">
+                    <h5>Anna G. Wilhite</h5>
+                    <p>CEO/Founder
+                    <p>
                 </div>
+            </div>
+            <div class="team_card">
+                <div class="team_card_header">
+                    <img src="assets/img/person2.png" alt="William S. Blay">
+                    <div class="social_medias_logo_team">
+                        <a href="https://facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://google.com"><i class="fa-brands fa-skype"></i></a>
+                    </div>
+                </div>
+                <div class="card-text">
+                    <h5>William S. Blay</h5>
+                    <p>CTO/Co-Founder
+                    <p>
+                </div>
+            </div>
+            <div class="team_card">
+                <div class="team_card_header">
+                    <img src="assets/img/person3.png" alt="Maria B. Morales">
+                    <div class="social_medias_logo_team">
+                        <a href="https://facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://google.com"><i class="fa-brands fa-skype"></i></a>
+                    </div>
+                </div>
+                <div class="card-text">
+                    <h5>Maria B. Morales</h5>
+                    <p>Web Designer
+                    <p>
+                </div>
+            </div>
+            <div class="team_card">
+                <div class="team_card_header">
+                    <img src="assets/img/person4.png" alt="Luke L. Johnston">
+                    <div class="social_medias_logo_team">
+                        <a href="https://facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://google.com"><i class="fa-brands fa-skype"></i></a>
+                    </div>
+                </div>
+                <div class="card-text">
+                    <h5>Luke L. Johnston</h5>
+                    <p>Web Developer
+                    <p>
+                </div>
+            </div>
+        </div>
+    </div>
 
-                <div id="parallax">
-                </div> 
+    <div id="started_w_kucra">
 
-                <div id="clientsays">
-                    <h2>What your client says</h2>
-                    <p>The Big Oxmox Advised her not to do so, because there were thousnads of bad Commas, wild Question Marks and devious pulvinar
-                        metus molestie sed Semikoli.</p>
+        <h3>Let's get started with Kucra</h3>
+        <p>They are a good way to get you started if you want to build something similar or use from existing apps
+            which will reduce the cost, efforts and time of the developers.
+        </p>
+        <button><a href="">Get Started</a></button>
+        <!-- <a><input type='button'>Get Started</a> -->
 
-                        <div class="swiper mySwiper">
+    </div>
 
-                            <div class="swiper-wrapper">
+    <!-- <div id="parallax">
+                </div>  -->
 
-                                <div class="swiper-slide">
+    <div id="clientsays">
+        <h2>What your client says</h2>
+        <p>The Big Oxmox Advised her not to do so, because there were thousnads of bad Commas, wild Question Marks and devious pulvinar
+            metus molestie sed Semikoli.</p>
 
-                                    <div class="client_card">
+        <div class="swiper mySwiper">
 
-                                        <div class="client_head">
+            <div class="swiper-wrapper">
 
-                                            <img src="assets/img/client1.png" alt="Charlize Theron">
-                                            <i class="fa-solid fa-quote-left"></i>
-                                            <h5>Charlize Theron</h5>
-                                            <p>Washington</p>
+                <div class="swiper-slide">
 
-                                        </div>  
-                                        <div class="client_text">
-                                            <p>"All your client websites if you are an agency orfreelancer. It got all the tools needs to create
-                                                super fast responsive websites with amazing user experience. Our ever-growing library of components
-                                                and pre-designed layouts will make your life easier."
-                                            </p>
-                                        </div>                                        
+                    <div class="client_card">
 
-                                    </div>
+                        <div class="client_head">
 
-                                </div>
-
-                                <div class="swiper-slide">
-
-                                    <div class="client_card">
-
-                                        <div class="client_head">
-
-                                            <img src="assets/img/client2.png" alt="Peter McCallauway">
-                                            <i class="fa-solid fa-quote-left"></i>
-                                            <h5>Peter McCallauway</h5>
-                                            <p>New York</p>
-
-                                        </div>  
-                                        <div class="client_text">
-                                            <p>"It looks perfect on all major browsers, tablets, and mobile devices, All files are organized we believe
-                                                it will be easy o use and edit them. This template is well organized and very easy to customize.
-                                                We have added a Dark version with RTL supported."
-                                            </p>
-                                        </div>                                        
-
-                                    </div>
-
-                                </div>
-
-                                <div class="swiper-slide">
-
-                                    <div class="client_card">
-
-                                        <div class="client_head">
-
-                                            <img src="assets/img/client3.png" alt="John Eston">
-                                            <i class="fa-solid fa-quote-left"></i>
-                                            <h5>John Eston</h5>
-                                            <p>Chicago</p>
-
-                                        </div>  
-                                        <div class="client_text">
-                                            <p>"Very well thought out and articulate communication. Clear milestones, deadlines and fast work. Patience.
-                                                Infinite patience. No shortcuts. Even if the client is being careless. The best part...always solving
-                                                problems with great original ideas!."e-designed layouts will make your life easier."
-                                            </p>
-                                        </div>                                        
-
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                            <div class="swiper-pagination"></div>
+                            <img src="assets/img/client1.png" alt="Charlize Theron">
+                            <i class="fa-solid fa-quote-left"></i>
+                            <h5>Charlize Theron</h5>
+                            <p>Washington</p>
 
                         </div>
-                        
-                          <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-                        
-                          <script>
-                            var swiper = new Swiper(".mySwiper", {
-                              pagination: {
-                                el: ".swiper-pagination",
-                                dynamicBullets: true,
-                                clickable:true,
-                              },
-                            });
-                          </script>
-
-                    <div id="client_logos">
-                        <img src="assets/img/01.png" alt="coffee_logo">
-                        <img src="assets/img/02.png" alt="fisherman_logo">
-                        <img src="assets/img/03.png" alt="coffee_moutainbike">
-                        <img src="assets/img/04.png" alt="coffee_mountain">
-                        <img src="assets/img/05.png" alt="coffee_market">
-                    </div>
-
-                </div>
-                
-                       
-                
-                <div id="pricing">
-
-                    <div id="pricing_header">
-
-                        <div id="pricing_header_text">
-                            <h3>We are digital creative Landing Page</h3>
-                            <p>The difference between a successful person and others is not a lack of strength, not a lack of knowledge, but rather a lack
-                                of will. Composed in a pseudo-latin language which more or less pseudo-Latin language correponds.
+                        <div class="client_text">
+                            <p>"All your client websites if you are an agency orfreelancer. It got all the tools needs to create
+                                super fast responsive websites with amazing user experience. Our ever-growing library of components
+                                and pre-designed layouts will make your life easier."
                             </p>
-                            
-                            <div id="container_pricing_header_text">
-                                <article>
-            
-                                    <h4>4957</h4>
-                                    <p>Happy Users</p>
-            
-                                </article>
-            
-                                <article>
-            
-                                    <h4>1599</h4>
-                                    <p>Complete Projects</p>
-            
-                                </article>  
-                            </div>
-    
-                            <button><a href="">Learn More</a></button>
                         </div>
-
-                         <img src="assets/img/creativity.png" alt="creativity">
-
-                    </div>
-
-
-                    <div id="forfaits">
-
-                        <h2>Our Pricing</h2>
-                        <p>It is a long established fact that a reader will be of a page when established fact looking at its layout.</p>
-
-                        <div id="forfait_cards">
-
-                            <div class="forfait_card">
-    
-                                <h4>Starter</h4>
-    
-                                <div class="price">
-                                    <p>$</p>
-                                    <h5>9</h5>
-                                    <p>/month</p>
-                                </div>
-                                
-                                <div class="forfait_advantages">
-
-                                    <div class="bandwith">
-                                        <span class="advantage_name">
-                                            <p><i class="fa-regular fa-circle-check"></i>Bandwith</p> 
-                                        </span>
-                                        <span class="advantage_value">
-                                            <p>1GB</p>
-                                        </span>
-                                    </div>
-
-                                    <div class="onlinespace">
-                                        <span class="advantage_name">
-                                            <p><i class="fa-regular fa-circle-check"></i>Onlinespace</p> 
-                                        </span>
-                                        <span class="advantage_value">
-                                            <p>500MB</p>
-                                        </span>
-                                    </div>
-
-                                    <div class="support">
-                                        <span class="advantage_name">
-                                            <p><i class="fa-regular fa-circle-xmark"></i>Support:No</p> 
-                                        </span>
-                                        <span class="advantage_value">
-                                            <p>No</p>
-                                        </span>
-                                    </div>
-
-                                    <div class="domain">
-                                        <span class="advantage_name">
-                                            <p><i class="fa-regular fa-circle-check"></i>Domain</p> 
-                                        </span>
-                                        <span class="advantage_value">
-                                            <p>1</p>
-                                        </span>
-                                    </div>
-
-                                    <div class="hiddenfees">
-                                        <span class="advantage_name">
-                                            <p><i class="fa-regular fa-circle-xmark"></i>Hidden Fees</p> 
-                                        </span>
-                                        <span class="advantage_value">
-                                            <p>No</p>
-                                        </span>
-                                    </div>
-
-                                </div>
-    
-                                <button><a href="">Join Now</a></button>
-    
-                            </div>
-    
-                            <div class="forfait_card">
-    
-                                <h4>Advanced</h4>
-    
-                                <div class="price">
-                                    <p>$</p>
-                                    <h5>19</h5>
-                                    <p>/month</p>
-                                </div>
-                                <div class="forfait_advantages">
-
-                                    <div class="bandwith">
-                                        <span class="advantage_name">
-                                            <p><i class="fa-regular fa-circle-check"></i>Bandwith</p> 
-                                        </span>
-                                        <span class="advantage_value">
-                                            <p>2GB</p>
-                                        </span>
-                                    </div>
-
-                                    <div class="onlinespace">
-                                        <span class="advantage_name">
-                                            <p><i class="fa-regular fa-circle-check"></i>Onlinespace</p> 
-                                        </span>
-                                        <span class="advantage_value">
-                                            <p>1GB</p>
-                                        </span>
-                                    </div>
-
-                                    <div class="support">
-                                        <span class="advantage_name">
-                                            <p><i class="fa-regular fa-circle-check"></i>Support:No</p> 
-                                        </span>
-                                        <span class="advantage_value">
-                                            <p>Yes</p>
-                                        </span>
-                                    </div>
-
-                                    <div class="domain">
-                                        <span class="advantage_name">
-                                            <p><i class="fa-regular fa-circle-check"></i>Domain</p> 
-                                        </span>
-                                        <span class="advantage_value">
-                                            <p>3</p>
-                                        </span>
-                                    </div>
-
-                                    <div class="hiddenfees">
-                                        <span class="advantage_name">
-                                            <p><i class="fa-regular fa-circle-check"></i>Hidden Fees</p> 
-                                        </span>
-                                        <span class="advantage_value">
-                                            <p>No</p>
-                                        </span>
-                                    </div>
-
-                                </div>
-    
-                                <button><a href="">Join Now</a></button>
-
-                                <aside><p>20% sale</p></aside>
-    
-                            </div>
-    
-                            <div class="forfait_card">
-    
-                                <h4>Professional</h4>
-    
-                                <div class="price">
-                                    <p>$</p>
-                                    <h5>29</h5>
-                                    <p>/month</p>
-                                </div>
-
-                                <div class="forfait_advantages">
-
-                                    <div class="bandwith">
-                                        <span class="advantage_name">
-                                            <p><i class="fa-regular fa-circle-check"></i>Bandwith</p> 
-                                        </span>
-                                        <span class="advantage_value">
-                                            <p>3GB</p>
-                                        </span>
-                                    </div>
-
-                                    <div class="onlinespace">
-                                        <span class="advantage_name">
-                                            <p><i class="fa-regular fa-circle-check"></i>Onlinespace</p> 
-                                        </span>
-                                        <span class="advantage_value">
-                                            <p>2GB</p>
-                                        </span>
-                                    </div>
-
-                                    <div class="support">
-                                        <span class="advantage_name">
-                                            <p><i class="fa-regular fa-circle-check"></i>Support:No</p> 
-                                        </span>
-                                        <span class="advantage_value">
-                                            <p>Yes</p>
-                                        </span>
-                                    </div>
-
-                                    <div class="domain">
-                                        <span class="advantage_name">
-                                            <p><i class="fa-regular fa-circle-check"></i>Domain</p> 
-                                        </span>
-                                        <span class="advantage_value">
-                                            <p>Unlimited</p>
-                                        </span>
-                                    </div>
-
-                                    <div class="hiddenfees">
-                                        <span class="advantage_name">
-                                            <p><i class="fa-regular fa-circle-check"></i>Hidden Fees</p> 
-                                        </span>
-                                        <span class="advantage_value">
-                                            <p>No</p>
-                                        </span>
-                                    </div>
-
-                                </div>
-    
-                                <button><a href="">Join Now</a></button>
-
-                            </div>
-                        </div>
-
-                    </div>
-
-
-
-                </div>
-
-                <div id="blog">
-
-                    <h2>Our Blog</h2>
-                    <p>It is a long established fact that a reader will be of a page when established fact looking at its layout.</p>
-
-                    <div id="blog_articles">
-
-                        <div class="blog_card">
-                            
-                            <div class="blog_card_header">
-
-                                <img src="/Kucra/assets/img/blog1.png" alt="">
-
-                                <div class="article_infos">
-
-                                    <div class="author">
-                                        <i class="fa-regular fa-user"></i><p>Calvin Carlo</p>
-                                    </div>
-
-                                    <div class="date">
-                                        <i class="fa-regular fa-clock"></i><p>20th March 2021</p>
-                                    </div>
-                                    
-                                </div>
-
-                            </div>
-
-
-                            <h3>Doing a cross country road trip</h3>
-                            <p>We craft digital, graphic and dimensional thinking, to create category leading brand.</p>
-                            <a href="">Read more</a>                          
-
-                        </div>
-    
-                        <div class="blog_card">
-
-                            <div class="blog_card_header">
-
-                                <img src="/Kucra/assets/img/blog2.png" alt="">
-
-                                <div class="article_infos">
-
-                                    <div class="author">
-                                        <i class="fa-regular fa-user"></i><p>Ruben Reed</p>
-                                    </div>
-
-                                    <div class="date">
-                                        <i class="fa-regular fa-clock"></i><p>01th July 2021</p>
-                                    </div>
-                                    
-                                </div>
-
-                            </div>
-
-                            <h3>New exhibition at our Museum</h3>
-                            <p>Even the all-powerful Pointing has no control about the blind almost unorthographic.</p>
-                            <a href="">Read more</a>
-
-                           
-
-                        </div>
-    
-                        <div class="blog_card">
-
-                            <div class="blog_card_header">
-
-                                <img src="/Kucra/assets/img/blog3.png" alt="">
-
-                                <div class="article_infos">
-
-                                    <div class="author">
-                                        <i class="fa-regular fa-user"></i><p>Theresa Sinclair</p>
-                                    </div>
-
-                                    <div class="date">
-                                        <i class="fa-regular fa-clock"></i><p>20th March 2021</p>
-                                    </div>
-                                    
-                                </div>
-
-                            </div>
-
-                            <h3>Design your apps in your own way</h3>
-                            <p>Pityful a rethoric question ran over her cheek, then she continued her way.</p>
-                            <a href="">Read more</a>                            
-
-                        </div>
-
 
                     </div>
 
                 </div>
 
-                <div id="scroll_container">
-                    <a href="#home_cover"><i class="fa-solid fa-arrow-up"></i></a>
+                <div class="swiper-slide">
+
+                    <div class="client_card">
+
+                        <div class="client_head">
+
+                            <img src="assets/img/client2.png" alt="Peter McCallauway">
+                            <i class="fa-solid fa-quote-left"></i>
+                            <h5>Peter McCallauway</h5>
+                            <p>New York</p>
+
+                        </div>
+                        <div class="client_text">
+                            <p>"It looks perfect on all major browsers, tablets, and mobile devices, All files are organized we believe
+                                it will be easy o use and edit them. This template is well organized and very easy to customize.
+                                We have added a Dark version with RTL supported."
+                            </p>
+                        </div>
+
+                    </div>
+
                 </div>
 
-            </main>
+                <div class="swiper-slide">
 
-        <footer>
+                    <div class="client_card">
 
-            <div id="footer_logos">
-                <a href="https://facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
-                <a href="https://linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://google.com"><i class="fa-brands fa-google-plus-g"></i></a>
+                        <div class="client_head">
+
+                            <img src="assets/img/client3.png" alt="John Eston">
+                            <i class="fa-solid fa-quote-left"></i>
+                            <h5>John Eston</h5>
+                            <p>Chicago</p>
+
+                        </div>
+                        <div class="client_text">
+                            <p>"Very well thought out and articulate communication. Clear milestones, deadlines and fast work. Patience.
+                                Infinite patience. No shortcuts. Even if the client is being careless. The best part...always solving
+                                problems with great original ideas!."e-designed layouts will make your life easier."
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
             </div>
 
-            <div id="footer_links">
-                <a href=""><p>Terms & Condition</p></a>
-                <span>|</span>
-                <a href=""><p>Privacy Policy</p></a>
-                <span>|</span>
-                <a href=""><p>Contact Us</p></a>
+            <div class="swiper-pagination"></div>
+
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+                pagination: {
+                    el: ".swiper-pagination",
+                    dynamicBullets: true,
+                    clickable: true,
+                },
+            });
+        </script>
+
+        <div id="client_logos">
+            <img src="assets/img/01.png" alt="coffee_logo">
+            <img src="assets/img/02.png" alt="fisherman_logo">
+            <img src="assets/img/03.png" alt="coffee_moutainbike">
+            <img src="assets/img/04.png" alt="coffee_mountain">
+            <img src="assets/img/05.png" alt="coffee_market">
+        </div>
+
+    </div>
+
+    <div id="pricing">
+
+        <div id="pricing_header">
+
+            <div id="pricing_header_text">
+                <h3>We are digital creative Landing Page</h3>
+                <p>The difference between a successful person and others is not a lack of strength, not a lack of knowledge, but rather a lack
+                    of will. Composed in a pseudo-latin language which more or less pseudo-Latin language correponds.
+                </p>
+
+                <div id="container_pricing_header_text">
+                    <article>
+
+                        <h4>4957</h4>
+                        <p>Happy Users</p>
+
+                    </article>
+
+                    <article>
+
+                        <h4>1599</h4>
+                        <p>Complete Projects</p>
+
+                    </article>
+                </div>
+
+                <button><a href="">Learn More</a></button>
             </div>
 
-            <p>2022 © Kucra - Landing Page Template by Pichforest</p>
+            <img src="assets/img/creativity.png" alt="creativity">
 
-        </footer>  
+        </div>
+
+
+        <div id="forfaits">
+
+            <h2>Our Pricing</h2>
+            <p>It is a long established fact that a reader will be of a page when established fact looking at its layout.</p>
+
+            <div id="forfait_cards">
+                <?php
+                foreach ($pricings as $pricing) {
+
+                ?>
+                    <div class="forfait_card">
+
+                        <h4><?= $pricing['name'] ?></h4>
+
+                        <div class="price">
+                            <p>$</p>
+                            <h5><?= $pricing['price'] ?></h5>
+                            <p>/month</p>
+                        </div>
+
+                        <div class="forfait_advantages">
+
+                            <div class="bandwith">
+                                <span class="advantage_name">
+                                    <p><i class="fa-regular fa-circle-check"></i>Bandwith</p>
+                                </span>
+                                <span class="advantage_value">
+                                    <p><?= $pricing['bandwidth'] ?></p>
+                                </span>
+                            </div>
+
+                            <div class="onlinespace">
+                                <span class="advantage_name">
+                                    <p><i class="fa-regular fa-circle-check"></i>Onlinespace</p>
+                                </span>
+                                <span class="advantage_value">
+                                    <p>
+                                        <?php
+
+                                        if ($pricing['online_space'] < 100) {
+                                            $dataType = "GB";
+                                        } else {
+                                            $dataType = "MB";
+                                        }
+
+                                        echo $pricing['online_space'] . $dataType;
+
+                                        ?>
+                                    </p>
+                                </span>
+                            </div>
+
+                            <div class="support">
+                                <?php
+
+                                if ($pricing['support'] == '1') {
+                                    $result = "Yes";
+                                    $icon = "<i class='fa-regular fa-circle-check'></i>";
+                                } else {
+                                    $result = "No";
+                                    $icon = "<i class='fa-regular fa-circle-xmark'></i>";
+                                }
+
+                                ?>
+                                <span class="advantage_name">
+                                    <p><?= $icon ?>Support</p>
+                                </span>
+                                <span class="advantage_value">
+                                    <p><?= $result ?></p>
+                                </span>
+                            </div>
+
+                            <div class="domain">
+                                <span class="advantage_name">
+                                    <p><i class="fa-regular fa-circle-check"></i>Domain</p>
+                                </span>
+                                <span class="advantage_value">
+                                    <p><?= $pricing['domain'] ?></p>
+                                </span>
+                            </div>
+
+                            <div class="hiddenfees">
+                                <?php
+
+                                if ($pricing['hidden_fees'] == '1') {
+                                    $result = "Yes";
+                                    $icon = "<i class='fa-regular fa-circle-check'></i>";
+                                } else {
+                                    $result = "No";
+                                    $icon = "<i class='fa-regular fa-circle-xmark'></i>";
+                                }
+
+                                ?>
+                                <span class="advantage_name">
+                                    <p><?= $icon ?>Hidden Fees</p>
+                                </span>
+                                <span class="advantage_value">
+                                    <p><?= $result ?></p>
+                                </span>
+                            </div>
+
+                        </div>
+
+                        <button><a href=''>Join Now</a></button>
+
+                    </div>
+
+                <?php
+
+                }
+
+                ?>
+
+
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+    <div id="blog">
+
+        <h2>Our Blog</h2>
+        <p>It is a long established fact that a reader will be of a page when established fact looking at its layout.</p>
+
+        <div id="blog_articles">
+
+            <div class="blog_card">
+
+                <div class="blog_card_header">
+
+                    <img src="assets/img/blog1.png" alt="">
+
+                    <div class="article_infos">
+
+                        <div class="author">
+                            <i class="fa-regular fa-user"></i>
+                            <p>Calvin Carlo</p>
+                        </div>
+
+                        <div class="date">
+                            <i class="fa-regular fa-clock"></i>
+                            <p>20th March 2021</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <h3>Doing a cross country road trip</h3>
+                <p>We craft digital, graphic and dimensional thinking, to create category leading brand.</p>
+                <a href="">Read more</a>
+
+            </div>
+
+            <div class="blog_card">
+
+                <div class="blog_card_header">
+
+                    <img src="assets/img/blog2.png" alt="">
+
+                    <div class="article_infos">
+
+                        <div class="author">
+                            <i class="fa-regular fa-user"></i>
+                            <p>Ruben Reed</p>
+                        </div>
+
+                        <div class="date">
+                            <i class="fa-regular fa-clock"></i>
+                            <p>01th July 2021</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <h3>New exhibition at our Museum</h3>
+                <p>Even the all-powerful Pointing has no control about the blind almost unorthographic.</p>
+                <a href="">Read more</a>
+
+
+
+            </div>
+
+            <div class="blog_card">
+
+                <div class="blog_card_header">
+
+                    <img src="assets/img/blog3.png" alt="">
+
+                    <div class="article_infos">
+
+                        <div class="author">
+                            <i class="fa-regular fa-user"></i>
+                            <p>Theresa Sinclair</p>
+                        </div>
+
+                        <div class="date">
+                            <i class="fa-regular fa-clock"></i>
+                            <p>20th March 2021</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <h3>Design your apps in your own way</h3>
+                <p>Pityful a rethoric question ran over her cheek, then she continued her way.</p>
+                <a href="">Read more</a>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <div id="scroll_container">
+        <a href="#home_cover"><i class="fa-solid fa-arrow-up"></i></a>
+    </div>
+
+    </main>
+
+    <footer>
+
+        <div id="footer_logos">
+            <a href="https://facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://google.com"><i class="fa-brands fa-google-plus-g"></i></a>
+        </div>
+
+        <div id="footer_links">
+            <a href="">
+                <p>Terms & Condition</p>
+            </a>
+            <span>|</span>
+            <a href="">
+                <p>Privacy Policy</p>
+            </a>
+            <span>|</span>
+            <a href="">
+                <p>Contact Us</p>
+            </a>
+        </div>
+
+        <p>2022 © Kucra - Landing Page Template by Pichforest</p>
+
+    </footer>
 
 </body>
+
 </html>
