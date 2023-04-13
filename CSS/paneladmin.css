@@ -1,0 +1,64 @@
+
+/********* ADMIN DASHBOARD *************************/
+
+* {
+    font-family: Poppins;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    text-align: center;
+    color:#188bfe;
+    margin:2rem;
+}
+
+#price_update_cards {
+    display: flex;
+    margin: auto;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.price_update_card form {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 450px;
+    gap: 2rem;
+    padding:2rem;
+}
+
+.price_update_card input {
+    outline: none;
+    height: 2rem;
+    padding-left: 7px;
+    border-radius: 5px;
+    border: 1px solid rgb(25, 25, 25, 0.2);
+    box-shadow: rgba(50, 50, 50, 0.2) 0px 2px 6px 0px;
+}
+
+.price_update_card input[type=checkbox] {
+    width:1.5rem;
+    box-shadow:none;
+}
+
+.price_update_card label:last-of-type input {
+    background-color:#188bfe;
+    width:100%;
+    color:white;
+    font-weight: 400;
+    font-size: 1rem;
+    cursor:pointer;
+    transition:.4s;
+}
+
+.price_update_card label:last-of-type input:hover {
+    opacity: 80%;
+    transform:translateY(-5px)
+}
+
+.price_update_card label:last-of-type {
+    width:100%;
+}
