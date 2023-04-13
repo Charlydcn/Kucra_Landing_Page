@@ -37,6 +37,11 @@ h2 {
     border-radius: 5px;
     border: 1px solid rgb(25, 25, 25, 0.2);
     box-shadow: rgba(50, 50, 50, 0.2) 0px 2px 6px 0px;
+    transition: .4s;
+}
+
+.price_update_card input:focus {
+    transform: translateY(5px);
 }
 
 .price_update_card input[type=checkbox] {
