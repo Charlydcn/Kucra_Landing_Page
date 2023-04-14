@@ -47,6 +47,7 @@ h2 {
 .price_update_card input[type=checkbox] {
     width:1.5rem;
     box-shadow:none;
+    cursor: pointer;
 }
 
 .price_update_card label:last-of-type input {

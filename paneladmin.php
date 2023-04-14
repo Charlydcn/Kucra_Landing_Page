@@ -1,4 +1,9 @@
-<?php require 'db-functions.php'; ?>
+<?php 
+
+require 'db-functions.php';
+// require 'functions.php';
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,59 +19,67 @@
     
     <div id="price_update_cards">
 
-        <?php foreach ($pricings as $pricing) { ?>
+        <?php 
+        var_dump($_GET);
+        
+        foreach ($pricings as $pricing) { 
+
+        ?>
 
         <div class="price_update_card">
 
-            <form action="traitement.php?action=addProduct" method="post" autocomplete="off" enctype="multipart/form-data"autocomplete="off">
-                <label name="name">
+            <form action="traitement.php?action=updatePricing&id='<?=$id?>'" method="post" enctype="multipart/form-data" autocomplete="off">
+                <label>
                     <p>Name</p>
-                    <input type="text">
+                    <input type="text" name="name" value= <?= $pricing['name'] ?> required >
                 </label>
 
-                <label name="price">
+                <label>
                     <p>Price</p>
-                    <input type="number">
+                    <input type="number" name="price" value= <?= $pricing['price'] ?> required >
                 </label>
 
-                <label name="sale">
+                <label>
                     <p>Sale</p>
-                    <input type="number">
+                    <input type="number" name="sale" value= <?= $pricing['sale'] ?> required >
                 </label>
 
-                <label name="bandwidth">
+                <label>
                     <p>Bandwidth</p>
-                    <input type="number">
+                    <input type="number" name="bandwidth" value= <?= $pricing['bandwidth'] ?> required >
                 </label>
 
-                <label name="online_space">
+                <label>
                     <p>Online Space</p>
-                    <input type="number">
+                    <input type="number" name="online_space" value= <?= $pricing['online_space'] ?> required >
                 </label>
 
-                <label name="support">
+                <label>
                     <p>Support</p>
-                    <input type="checkbox">
+                    <input type="checkbox" name="support" <?php if ($pricing['support'] == 1) {echo "checked";} ?> >
                 </label>
 
-                <label name="domain">
+                <label>
                     <p>Domain</p>
-                    <input type="text">
+                    <input type="text" name="domain" value= <?= $pricing['domain'] ?> required >
                 </label>
 
-                <label name="hidden_fees">
+                <label>
                     <p>Hidden Fees</p>
-                    <input type="checkbox">
+                    <input type="checkbox" name="hidden_fees" <?php if ($pricing['hidden_fees'] == 1) {echo "checked";} ?> >
                 </label>
 
                 <label name="submit">
-                    <input type="submit" placeholder="Update">
+                    <input type="submit" value="Update">
                 </label>
             </form>
 
         </div>
 
-        <?php } ?>
+        <?php } 
+        
+
+        ?>
 
     </div>
 

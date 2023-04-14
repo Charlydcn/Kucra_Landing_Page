@@ -6,14 +6,22 @@ try {
     die('Erreur : ' . $e->getMessage());
 }
 
-$starterQuery =
+$sql =
     "SELECT *
      FROM pricing
      LIMIT 3";
 
-$starterStatement = $db->prepare($starterQuery);
-$starterStatement->execute();
-$pricings = $starterStatement->fetchAll();
+$pricingStatement = $db->prepare($sql);
+$pricingStatement->execute();
+$pricings = $pricingStatement->fetchAll();
 
+function UpdatePricing($name, $price, $sale, $bandwidth, $onlineSpace, $support, $domain, $hiddenFees, $id)
+{
+    $sql = 
+    "UPDATE pricing
+    SET name = :name, price = :price, sale = :sale, bandwidth = :bandwidth, online_space = :onlineSpace,
+    support = :support, domain = :domain, hidden_fees = :hiddenFees
+    WHERE id = :id";    
+}
 
-var_dump($starterValues);
+?>
