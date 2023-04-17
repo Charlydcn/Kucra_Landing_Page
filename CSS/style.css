@@ -494,9 +494,9 @@ a:visited {
 /****************************************** WHAT YOUR CLIENT SAYS **********************************************/
 
 #clientsays {
-    height:110dvh;
+    height:fit-content;
     background-color:rgb(245, 245, 245);
-    padding-top: 5%;
+    padding: 5% 0;
 }
 
 #clientsays h2 {
