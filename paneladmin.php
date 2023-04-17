@@ -1,7 +1,7 @@
 <?php 
 
-require 'db-functions.php';
-// require 'functions.php';
+session_start();
+require_once 'db-functions.php';
 
 ?>
 <!DOCTYPE html>
@@ -20,15 +20,13 @@ require 'db-functions.php';
     <div id="price_update_cards">
 
         <?php 
-        var_dump($_GET);
         
         foreach ($pricings as $pricing) { 
 
         ?>
 
         <div class="price_update_card">
-
-            <form action="traitement.php?action=updatePricing&id='<?=$id?>'" method="post" enctype="multipart/form-data" autocomplete="off">
+            <form action="functions.php?action=update&id='<?=$pricing['id_pricing']?>'" method="POST" enctype="multipart/form-data" autocomplete="off">
                 <label>
                     <p>Name</p>
                     <input type="text" name="name" value= <?= $pricing['name'] ?> required >
