@@ -31,8 +31,8 @@ function UpdatePricing($name, $price, $sale, $bandwidth, $onlineSpace, $support,
     $db = dbConnect();
     $sql = 
     "UPDATE pricing
-    SET name = :name, price = :price, sale = :sale, bandwidth = :bandwidth, online_space = :onlineSpace,
-    support = :support, domain = :domain, hidden_fees = :hiddenFees
+    SET name = :name, price = :price, sale = :sale, bandwidth = :bandwidth, onlineSpace = :onlineSpace,
+    support = :support, domain = :domain, hiddenFees = :hiddenFees
     WHERE id_pricing = :id";
     
     $stmt = $db->prepare($sql);

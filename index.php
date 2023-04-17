@@ -448,9 +448,9 @@ require 'db-functions.php';
                                     <p>
                                         <?php
 
-                                        $pricing['online_space'] < 100 ? $dataType = "GB" : $dataType = "MB";
+                                        $pricing['onlineSpace'] < 100 ? $dataType = "GB" : $dataType = "MB";
 
-                                        echo $pricing['online_space'] . $dataType;
+                                        echo $pricing['onlineSpace'] . $dataType;
 
                                         ?>
                                     </p>
@@ -489,7 +489,7 @@ require 'db-functions.php';
                             <div class="hiddenfees">
                                 <?php
 
-                                if ($pricing['hidden_fees'] == '1') {
+                                if ($pricing['hiddenFees'] == '1') {
                                     $result = "Yes";
                                     $icon = "<i class='fa-regular fa-circle-check'></i>";
                                 } else {

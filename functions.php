@@ -15,10 +15,10 @@ if (isset($_GET['action'])) {
             $price = filter_input(INPUT_POST, "price", FILTER_VALIDATE_FLOAT);
             $sale = filter_input(INPUT_POST, "sale", FILTER_VALIDATE_FLOAT);
             $bandwidth = filter_input(INPUT_POST, "bandwidth", FILTER_VALIDATE_FLOAT);
-            $onlineSpace = filter_input(INPUT_POST, "online_space", FILTER_VALIDATE_FLOAT);
+            $onlineSpace = filter_input(INPUT_POST, "onlineSpace", FILTER_VALIDATE_FLOAT);
             $support = filter_input(INPUT_POST, "support", FILTER_VALIDATE_BOOLEAN);
             $domain = filter_input(INPUT_POST, "domain", FILTER_VALIDATE_FLOAT);
-            $hiddenFees = filter_input(INPUT_POST, "hidden_fees", FILTER_VALIDATE_BOOLEAN);
+            $hiddenFees = filter_input(INPUT_POST, "hiddenFees", FILTER_VALIDATE_BOOLEAN);
             
             if ($support === NULL) {
                 $support = false;

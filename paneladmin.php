@@ -49,7 +49,7 @@ require_once 'db-functions.php';
 
                 <label>
                     <p>Online Space</p>
-                    <input type="number" name="online_space" value= <?= $pricing['online_space'] ?> required >
+                    <input type="number" name="onlineSpace" value= <?= $pricing['onlineSpace'] ?> required >
                 </label>
 
                 <label>
@@ -64,7 +64,7 @@ require_once 'db-functions.php';
 
                 <label>
                     <p>Hidden Fees</p>
-                    <input type="checkbox" name="hidden_fees" <?php if ($pricing['hidden_fees'] == 1) {echo "checked";} ?> >
+                    <input type="checkbox" name="hiddenFees" <?php if ($pricing['hiddenFees'] == 1) {echo "checked";} ?> >
                 </label>
 
                 <label name="submit">
