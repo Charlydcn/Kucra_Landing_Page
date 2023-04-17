@@ -25,10 +25,10 @@ CREATE TABLE IF NOT EXISTS `pricing` (
   `price` int NOT NULL,
   `sale` int DEFAULT NULL,
   `bandwidth` int NOT NULL DEFAULT '0',
-  `online_space` int NOT NULL,
+  `onlineSpace` int NOT NULL,
   `support` tinyint NOT NULL DEFAULT '0',
   `domain` varchar(50) NOT NULL DEFAULT '0',
-  `hidden_fees` tinyint NOT NULL DEFAULT '0'
+  `hiddenFees` tinyint NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- Les données exportées n'étaient pas sélectionnées.
@@ -39,11 +39,11 @@ CREATE TABLE IF NOT EXISTS `pricing` (
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40111 SET SQL_NOTES=IFNULL(@OLD_SQL_NOTES, 1) */;
 
-INSERT INTO pricing (id_pricing, NAME, price, bandwidth, online_space, support, domain, hidden_fees)
+INSERT INTO pricing (id_pricing, NAME, price, bandwidth, onlineSpace, support, domain, hiddenFees)
 VALUES (1, "Starter", 9, 1, 500, FALSE, 1, FALSE)
 
-INSERT INTO pricing (id_pricing, NAME, price, sale, bandwidth, online_space, support, domain, hidden_fees)
+INSERT INTO pricing (id_pricing, NAME, price, sale, bandwidth, onlineSpace, support, domain, hiddenFees)
 VALUES (2, "Advanced", 19, 20, 2, 1, TRUE, 3, FALSE);
 
-INSERT INTO pricing (id_pricing, NAME, price, bandwidth, online_space, support, domain, hidden_fees)
+INSERT INTO pricing (id_pricing, NAME, price, bandwidth, onlineSpace, support, domain, hiddenFees)
 VALUES (3, "Professional", 29, 3, 2, TRUE, "Unlimited", FALSE);
