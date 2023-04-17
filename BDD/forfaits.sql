@@ -38,3 +38,12 @@ CREATE TABLE IF NOT EXISTS `pricing` (
 /*!40014 SET FOREIGN_KEY_CHECKS=IFNULL(@OLD_FOREIGN_KEY_CHECKS, 1) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40111 SET SQL_NOTES=IFNULL(@OLD_SQL_NOTES, 1) */;
+
+INSERT INTO pricing (id_pricing, NAME, price, bandwidth, online_space, support, domain, hidden_fees)
+VALUES (1, "Starter", 9, 1, 500, FALSE, 1, FALSE)
+
+INSERT INTO pricing (id_pricing, NAME, price, sale, bandwidth, online_space, support, domain, hidden_fees)
+VALUES (2, "Advanced", 19, 20, 2, 1, TRUE, 3, FALSE);
+
+INSERT INTO pricing (id_pricing, NAME, price, bandwidth, online_space, support, domain, hidden_fees)
+VALUES (3, "Professional", 29, 3, 2, TRUE, "Unlimited", FALSE);
