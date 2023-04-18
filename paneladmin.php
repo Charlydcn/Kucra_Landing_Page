@@ -23,12 +23,14 @@ require_once 'db-functions.php';
 
         <?php
 
+        $pricings = getPricings();
+
         foreach ($pricings as $pricing) {
 
         ?>
 
             <div class="price_update_card">
-                <form action="functions.php?action=update&id='<?= $pricing['id_pricing'] ?>'" method="POST" autocomplete="off">
+                <form action="functions.php?action=update&id=<?= $pricing['id_pricing'] ?>" method="POST" autocomplete="off">
                     <label>
                         <p>Name</p>
                         <input type="text" name="name" value=<?= $pricing['name'] ?> required>
@@ -69,7 +71,7 @@ require_once 'db-functions.php';
                         <input type="checkbox" name="hiddenFees" <?php if ($pricing['hiddenFees'] == 1) { echo "checked"; } ?>>
                     </label>
 
-                    <input type="submit" value="Update">
+                    <input type="submit" name="submit" value="Update">
                 </form>
 
             </div>
