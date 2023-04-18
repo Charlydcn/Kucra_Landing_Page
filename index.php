@@ -418,7 +418,7 @@ require 'db-functions.php';
                     <?php
 
                     if ($pricing['nbMember'] > 5) {
-                        echo "Déjà " . $pricing['nbMember'] . " adhérents !";
+                        echo "<h5>Déjà " . $pricing['nbMember'] . " adhérents !</h5>";
                     }
 
                     if ($pricing['sale'] > 0 && $pricing['sale'] < 100) {
