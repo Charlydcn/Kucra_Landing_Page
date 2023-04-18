@@ -408,6 +408,9 @@ require 'db-functions.php';
 
             <div id="forfait_cards">
                 <?php
+
+                $pricings = getPricings();
+
                 foreach ($pricings as $pricing) {
 
                 ?>
@@ -415,7 +418,8 @@ require 'db-functions.php';
 
                         <?php
 
-                        if ($pricing['sale'] != 0) {
+
+                        if ($pricing['sale'] > 0 && $pricing['sale'] < 100) {
                             echo "<aside class='sale_box'><p>" . $pricing['sale'] . "% sale</p></aside>";
                         }
 
@@ -436,7 +440,20 @@ require 'db-functions.php';
                                     <p><i class="fa-regular fa-circle-check"></i>Bandwith</p>
                                 </span>
                                 <span class="advantage_value">
-                                    <p><?= $pricing['bandwidth'] ?></p>
+                                    <p>
+                                        <?php
+
+                                            if ($pricing['bandwidth'] >= 1000) {
+                                                $pricing['bandwidth'] /= 1000;
+                                                $dataType = "GB";
+                                            } else {
+                                                $dataType = "MB";
+                                            }
+
+                                            echo $pricing['bandwidth'] . $dataType;
+
+                                        ?>
+                                    </p>
                                 </span>
                             </div>
 
@@ -448,7 +465,12 @@ require 'db-functions.php';
                                     <p>
                                         <?php
 
-                                        $pricing['onlineSpace'] < 100 ? $dataType = "GB" : $dataType = "MB";
+                                        if ($pricing['onlineSpace'] >= 1000) {
+                                            $pricing['onlineSpace'] /= 1000;
+                                            $dataType = "GB";
+                                        } else {
+                                            $dataType = "MB";
+                                        }
 
                                         echo $pricing['onlineSpace'] . $dataType;
 
@@ -518,8 +540,9 @@ require 'db-functions.php';
 
                 ?>
 
-
             </div>
+            
+            <a href="paneladmin.php">Admin</a>
 
         </div>
 
