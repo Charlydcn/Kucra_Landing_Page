@@ -71,6 +71,11 @@ require_once 'db-functions.php';
                         <input type="checkbox" name="hiddenFees" <?php if ($pricing['hiddenFees'] == 1) { echo "checked"; } ?>>
                     </label>
 
+                    <label>
+                        <p>Members</p>
+                        <input type="number" name="nbMember" value="<?= $pricing['nbMember'] ?>">
+                    </label>
+
                     <input type="submit" name="submit" value="Update">
                 </form>
 
