@@ -37,22 +37,22 @@ require_once 'db-functions.php';
                     </label>
 
                     <label>
-                        <p>Price</p>
+                        <p>Price (€)</p>
                         <input type="number" name="price" value=<?= $pricing['price'] ?> required>
                     </label>
 
                     <label>
-                        <p>Sale</p>
+                        <p>Sale (%)</p>
                         <input type="number" name="sale" value=<?= $pricing['sale'] ?>>
                     </label>
 
                     <label>
-                        <p>Bandwidth</p>
+                        <p>Bandwidth (MB)</p>
                         <input type="number" name="bandwidth" value=<?= $pricing['bandwidth'] ?> step="500" required>
                     </label>
 
                     <label>
-                        <p>Online Space</p>
+                        <p>Online Space (MB)</p>
                         <input type="number" name="onlineSpace" value=<?= $pricing['onlineSpace'] ?> step="500" required>
                     </label>
 
