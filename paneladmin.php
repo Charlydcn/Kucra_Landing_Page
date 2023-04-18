@@ -43,17 +43,17 @@ require_once 'db-functions.php';
 
                     <label>
                         <p>Sale</p>
-                        <input type="number" name="sale" value=<?= $pricing['sale'] ?> required>
+                        <input type="number" name="sale" value=<?= $pricing['sale'] ?>>
                     </label>
 
                     <label>
                         <p>Bandwidth</p>
-                        <input type="number" name="bandwidth" value=<?= $pricing['bandwidth'] ?> required>
+                        <input type="number" name="bandwidth" value=<?= $pricing['bandwidth'] ?> step="500" required>
                     </label>
 
                     <label>
                         <p>Online Space</p>
-                        <input type="number" name="onlineSpace" value=<?= $pricing['onlineSpace'] ?> required>
+                        <input type="number" name="onlineSpace" value=<?= $pricing['onlineSpace'] ?> step="500" required>
                     </label>
 
                     <label>
@@ -82,6 +82,9 @@ require_once 'db-functions.php';
         ?>
 
     </div>
+
+    <a href="index.php#pricing">Accueil</a>
+    
 
 </body>
 
