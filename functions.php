@@ -20,6 +20,7 @@ if (isset($_GET['action'])) {
                 $support = filter_input(INPUT_POST, "support", FILTER_VALIDATE_BOOLEAN);
                 $domain = filter_input(INPUT_POST, "domain", FILTER_SANITIZE_FULL_SPECIAL_CHARS);
                 $hiddenFees = filter_input(INPUT_POST, "hiddenFees", FILTER_VALIDATE_BOOLEAN);
+                $nbMember = filter_input(INPUT_POST, "nbMember", FILTER_VALIDATE_INT);
     
                 // Si il y avait beaucoup de booléens, il aurait fallu faire un tableau de valeurs, et transformer chaque valeurs en bool(false) si null
                 if ($support === null) {
@@ -34,7 +35,7 @@ if (isset($_GET['action'])) {
     
                     if ($name && $price && $bandwidth && $onlineSpace && is_bool($support) && $domain && is_bool($hiddenFees)) {
     
-                        updatePricing($name, $price, $sale, $bandwidth, $onlineSpace, $support, $domain, $hiddenFees, $id);
+                        updatePricing($name, $price, $sale, $bandwidth, $onlineSpace, $support, $domain, $hiddenFees, $nbMember, $id);
                     }
                 }
     
