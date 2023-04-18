@@ -28,14 +28,13 @@ function getPricings() {
     return $pricings;
 }
 
-function updatePricing($name, $price, $sale, $bandwidth, $onlineSpace, $support, $domain, $hiddenFees, $id)
+function updatePricing($name, $price, $sale, $bandwidth, $onlineSpace, $support, $domain, $hiddenFees, $nbMember, $id)
 {
 
     $db = dbConnect();
     $sql =
         "UPDATE pricing
-        SET name = :name, price = :price, sale = :sale, bandwidth = :bandwidth, onlineSpace = :onlineSpace,
-        support = :support, domain = :domain, hiddenFees = :hiddenFees
+        SET name = :name, price = :price, sale = :sale, bandwidth = :bandwidth, onlineSpace = :onlineSpace, nbMember = :nbMember, support = :support, domain = :domain, hiddenFees = :hiddenFees
         WHERE id_pricing = :id";
 
     $stmt = $db->prepare($sql);
@@ -47,6 +46,7 @@ function updatePricing($name, $price, $sale, $bandwidth, $onlineSpace, $support,
     $stmt->bindValue(':support', $support ? 1 : 0);
     $stmt->bindValue(':domain', $domain);
     $stmt->bindValue(':hiddenFees', $hiddenFees ? 1 : 0);
+    $stmt->bindValue(':nbMember', $nbMember);
     $stmt->bindValue(':id', $id);
     $stmt->execute();
 }
@@ -61,7 +61,5 @@ function addMember($id) {
 
     $stmt = $db->prepare($sql);
     $stmt->bindValue(':id', $id);
-    $stmt->execute();
-
-    
+    $stmt->execute();    
 }
