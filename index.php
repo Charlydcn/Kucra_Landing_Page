@@ -250,11 +250,13 @@ require 'db-functions.php';
 
     <section id="parallax">
 
-            <h3>Let's get started with Kucra</h3>
-            <p>They are a good way to get you started if you want to build something similar or use from existing apps
-                which will reduce the cost, efforts and time of the developers.
-            </p>
-            <a href="">Get Started</a>
+        <div id="parallax_overlay"></div>
+        
+        <h3>Let's get started with Kucra</h3>
+        <p>They are a good way to get you started if you want to build something similar or use from existing apps
+            which will reduce the cost, efforts and time of the developers.
+        </p>
+        <a href="">Get Started</a>
 
     </section>     
 
