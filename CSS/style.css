@@ -424,8 +424,9 @@ a:visited {
 /****************************************** PARALLAX **********************************************/
 
 #parallax {
-    height:50vh;
+    height:40vh;
     color:white;
+    /* "../path/path/etc" = on recule d'un dossier avec les deux points */
     background-image: url("../assets/img/parallax.png");
     background-attachment: fixed;
     background-position: center;
@@ -437,7 +438,6 @@ a:visited {
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    z-index: 1;
 }
 
 #parallax_overlay {
