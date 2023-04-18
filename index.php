@@ -45,7 +45,7 @@ require 'db-functions.php';
                             <li><a href="#howitworks" class="nav_text">FAQ</a></li>
                             <li><a href="#team" class="nav_text">ABOUT</a></li>
                             <li><a href="#blog" class="nav_text">BLOG</a></li>
-                            <li><a href="#started_w_kucra" class="nav_text">CONTACT</a></li>
+                            <li><a href="#parallax" class="nav_text">CONTACT</a></li>
                             <ul>
 
                     </div>
@@ -74,7 +74,7 @@ require 'db-functions.php';
                         <li><a href="#howitworks" class="nav_text">FAQ</a></li>
                         <li><a href="#team" class="nav_text">ABOUT</a></li>
                         <li><a href="#blog" class="nav_text">BLOG</a></li>
-                        <li><a href="#started_w_kucra" class="nav_text">CONTACT</a></li>
+                        <li><a href="#parallax" class="nav_text">CONTACT</a></li>
                         <ul>
                 </div>
 
@@ -248,19 +248,15 @@ require 'db-functions.php';
         </div>
     </section>
 
-    <section id="started_w_kucra">
+    <section id="parallax">
 
-        <h3>Let's get started with Kucra</h3>
-        <p>They are a good way to get you started if you want to build something similar or use from existing apps
-            which will reduce the cost, efforts and time of the developers.
-        </p>
-        <button><a href="">Get Started</a></button>
-        <!-- <a><input type='button'>Get Started</a> -->
+            <h3>Let's get started with Kucra</h3>
+            <p>They are a good way to get you started if you want to build something similar or use from existing apps
+                which will reduce the cost, efforts and time of the developers.
+            </p>
+            <a href="">Get Started</a>
 
-    </section>
-
-    <!-- <section id="parallax">
-                </section>  -->
+    </section>     
 
     <section id="clientsays">
         <h2>What your client says</h2>
@@ -428,7 +424,7 @@ require 'db-functions.php';
                     <?php
 
                     if ($pricing['nbMember'] > 5) {
-                        echo "<h5>Déjà " . $pricing['nbMember'] . " adhérents !</h5>";
+                        echo "<h5>Currently " . $pricing['nbMember'] . " members !</h5>";
                     }
 
                     if ($pricing['sale'] > 0 && $pricing['sale'] < 100) {
