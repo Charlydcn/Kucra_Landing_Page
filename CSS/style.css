@@ -754,54 +754,53 @@ a:visited {
 /****************************************** PRICING **********************************************/
 
 #pricing {
-    margin-top: 5%;
+    margin: 10% auto;
 }
 
 /* HEADER */
 
-#pricing_header {
+#creativity {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    height:500px;
-    margin:auto;
-    margin-bottom: 10%;
+    margin:10% auto;
 }
 
-#pricing_header_text {
+#creativity_text {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width:37.5%;
+    gap:2rem;
     height:80%;
 }
 
-#container_pricing_header_text {
+#creativity_milestone {
     display: flex;
     width:45%;
     gap:2rem;
 }
 
-#pricing img {
-    height: 80%;
+#creativity img {
+    width:50%;
 }
 
-#pricing_header_text h3 {
+#creativity_text h3 {
     font-weight: 700;
     font-size: 34px;
 }
 
-#pricing_header_text p {
+#creativity_text p {
     text-align: start;
     opacity: 50%;
     font-size: 18px;
 }
-#container_pricing_header_text h4 {
+.milestone h4 {
     font-size: 30px;
     font-weight: 500;
 }
 
-#pricing_header_text button {
+#creativity_text button {
     width:150px;
     height:40px;
     background-color: #3f8efddc;
@@ -810,7 +809,7 @@ a:visited {
     transition: 0.3s;
 }
 
-#pricing_header_text button a {
+#creativity_text button a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -821,25 +820,25 @@ a:visited {
     font-size: 18px;
 }
 
-#pricing_header_text button:hover {
+#creativity_text button:hover {
     opacity:85%;
 }
 
-/* FORFAITS */
+/* pricing */
 
-#forfaits {
+#pricing {
     background-color: rgb(245, 245, 245);
     padding: 5% 0;
     padding-bottom: 5%;
 }
 
-#forfaits h2 {
+#pricing h2 {
     text-align: center;
     font-size: 35px;
     margin-bottom: 0.5em;
 }
 
-#forfaits h2+p {
+#pricing h2+p {
     opacity: 60%;
     text-align: center;
     width:35%;
@@ -848,14 +847,14 @@ a:visited {
 }
 
 
-#forfait_cards {
+#pricing_cards {
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin-top: 4em;
 }
 
-.forfait_card {
+.pricing_card {
     background-color: white;
     margin:2em 0.5em;
     width:400px;
@@ -865,7 +864,7 @@ a:visited {
     position: relative;
 }
 
-.forfait_card h4 {
+.pricing_card h4 {
     text-align: center;
     font-size: 20px;
 }
@@ -916,12 +915,10 @@ a:visited {
     margin-right: 5px;
 }
 
-.forfait_advantages {
+.pricing_advantages {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height:250px;
-    margin-bottom: 2em;
 }
 
 .advantage_value {
@@ -942,37 +939,26 @@ a:visited {
     font-weight: 500;
 }
 
-.forfait_card button {
-    width:100%;
-    height:50px;
-    margin-top:4em;
+.pricing_card:nth-child(2) {
+    translate: 0 -20px;
+}
+
+.pricing_card a:last-of-type { /* Join Now Button */
     background-color: transparent;
     border:solid 2px #3f8efddc;
     border-radius: 5px;
-    transition: 0.3s;    
-}
-
-.forfait_card button a {
+    transition: 0.3s; 
     display: flex;
     justify-content: center;
     color: #3f8efddc;
     text-decoration: none;
     font-size: 18px;
+    padding: 0.5rem 0;
+    margin: 1rem auto;
 }
 
-.forfait_card:nth-child(2) {
-    translate: 0 -20px;
-}
-
-.forfait_card:nth-child(2) button {
-    background-color: #3f8efddc;
-}
-
-.forfait_card:nth-child(2) button:hover {
-    opacity:85%;
-}
-
-.forfait_card:nth-child(2) button a {
+.pricing_card a:last-of-type:hover {
+    background-color:#3f8efd;
     color:white;
 }
 
@@ -984,6 +970,7 @@ a:visited {
     width:70px;
     height:70px;
     border-bottom-left-radius: 15px;
+    border-top-right-radius: 15px;
     margin:auto;
     position:absolute;
     top:0%;
@@ -1270,46 +1257,46 @@ position: absolute;
         margin-top: 5%;
     }
 
-    #pricing_header {
+    #creativity {
         flex-direction: column;
         height:auto;
         align-items: center;
         padding:5%;
     }
 
-    #pricing_header_text {
+    #creativity_text {
         width:auto;
     }
 
-    #pricing_header_text h3+p {
+    #creativity_text h3+p {
         margin: 5% auto;
     }
 
-    #pricing_header_text button {
+    #creativity_text button {
         margin:5% 0;
     }
 
-    #pricing_header_text h3 {
+    #creativity_text h3 {
         width:auto;
         margin:auto;
     }
 
-    #forfaits h2+p {
+    #pricing h2+p {
         width:80%;
     }
 
-    #forfait_cards {
+    #pricing_cards {
         margin-top: 5%;
         align-items: center;
         width:auto;
         flex-direction: column;
     }
 
-    .forfait_card {
+    .pricing_card {
         width:65%;
     }
 
-    .forfait_card:nth-child(2) {
+    .pricing_card:nth-child(2) {
         translate: 0;
     }
 
@@ -1380,7 +1367,7 @@ position: absolute;
         font-size: 1em;
     }
 
-    #container_pricing_header_text article {
+    #container_creativity_text article {
         margin-right: 2em;
     }
 
@@ -1388,7 +1375,7 @@ position: absolute;
         font-size: 14px;
     }
 
-    .forfait_card {
+    .pricing_card {
         width: 75%;
     }
 
