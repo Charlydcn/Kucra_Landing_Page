@@ -46,6 +46,7 @@ if (isset($_GET['action'])) {
 
         case "addMember":
             addMember($id);
+            $_SESSION['message'] = "<p class='price_success_msg'>Thanks for joining us !</p>";
 
             header("Location:index.php#pricing");
     }
