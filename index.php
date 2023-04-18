@@ -38,7 +38,7 @@ require 'db-functions.php';
                     <div id="nav_links">
 
                         <ul>
-                            <li><a href="index.html" class="nav_text">HOME</a></li>
+                            <li><a href="index.php" class="nav_text">HOME</a></li>
                             <li><a href="#products_features" class="nav_text">FEATURES</a></li>
                             <li><a href="#clientsays" class="nav_text">CLIENT</a></li>
                             <li><a href="#pricing" class="nav_text">PRICING</a></li>
