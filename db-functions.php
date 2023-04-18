@@ -50,3 +50,18 @@ function updatePricing($name, $price, $sale, $bandwidth, $onlineSpace, $support,
     $stmt->bindValue(':id', $id);
     $stmt->execute();
 }
+
+function addMember($id) {
+
+    $db = dbConnect();
+    $sql = 
+        "UPDATE pricing
+        SET nbMember = nbMember + 1
+        WHERE id_pricing = :id";
+
+    $stmt = $db->prepare($sql);
+    $stmt->bindValue(':id', $id);
+    $stmt->execute();
+
+    
+}
