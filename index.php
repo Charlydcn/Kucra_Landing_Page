@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 require 'db-functions.php';
 
@@ -491,10 +491,10 @@ require 'db-functions.php';
 
                                 if ($pricing['hiddenFees'] == '1') {
                                     $result = "Yes";
-                                    $icon = "<i class='fa-regular fa-circle-check'></i>";
+                                    $icon = "<i class='fa-regular fa-circle-xmark'></i>";
                                 } else {
                                     $result = "No";
-                                    $icon = "<i class='fa-regular fa-circle-xmark'></i>";
+                                    $icon = "<i class='fa-regular fa-circle-check'></i>";
                                 }
 
                                 ?>
