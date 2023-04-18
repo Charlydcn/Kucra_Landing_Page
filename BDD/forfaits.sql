@@ -25,11 +25,25 @@ CREATE TABLE IF NOT EXISTS `pricing` (
   `sale` int(11) DEFAULT NULL,
   `bandwidth` int(11) NOT NULL DEFAULT '0',
   `onlineSpace` int(11) NOT NULL,
-  `support` tinyint(4) NOT NULL DEFAULT '0',
+  `support` tinyint(1) NOT NULL DEFAULT '0',
   `domain` varchar(50) NOT NULL DEFAULT '0',
-  `hiddenFees` tinyint(4) NOT NULL DEFAULT '0',
+  `hiddenFees` tinyint(1) NOT NULL DEFAULT '0',
+  `nbMember` int(11) DEFAULT NULL,
   PRIMARY KEY (`id_pricing`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- -- Listage des données de la table forfaits.pricing : ~3 rows (environ)
+-- /*!40000 ALTER TABLE `pricing` DISABLE KEYS */;
+-- INSERT INTO `pricing` (`id_pricing`, `name`, `price`, `sale`, `bandwidth`, `onlineSpace`, `support`, `domain`, `hiddenFees`, `nbMember`) VALUES
+-- 	(1, 'Started', 9, 0, 1000, 500, 0, '1', 0, 0),
+-- 	(2, 'Advanced', 19, 20, 2000, 1000, 1, '3', 0, 2),
+-- 	(3, 'Professional', 29, NULL, 3000, 2000, 1, 'Unlimited', 0, 1);
+-- /*!40000 ALTER TABLE `pricing` ENABLE KEYS */;
+
+-- /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
+-- /*!40014 SET FOREIGN_KEY_CHECKS=IFNULL(@OLD_FOREIGN_KEY_CHECKS, 1) */;
+-- /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+-- /*!40111 SET SQL_NOTES=IFNULL(@OLD_SQL_NOTES, 1) */;
 
 -- Listage des données de la table forfaits.pricing : ~0 rows (environ)
 /*!40000 ALTER TABLE `pricing` DISABLE KEYS */;
