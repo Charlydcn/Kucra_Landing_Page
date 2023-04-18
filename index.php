@@ -367,186 +367,181 @@ require 'db-functions.php';
 
     </section>
 
-    <section id="pricing">
+    <section id="creativity">
 
-        <div id="pricing_header">
+        <div id="creativity_text">
 
-            <div id="pricing_header_text">
-                <h3>We are digital creative Landing Page</h3>
-                <p>The difference between a successful person and others is not a lack of strength, not a lack of knowledge, but rather a lack
-                    of will. Composed in a pseudo-latin language which more or less pseudo-Latin language correponds.
-                </p>
+            <h3>We are digital creative Landing Page</h3>
 
-                <div id="container_pricing_header_text">
-                    <article>
+            <p>The difference between a successful person and others is not a lack of strength, not a lack of knowledge, but rather a lack
+                of will. Composed in a pseudo-latin language which more or less pseudo-Latin language correponds.
+            </p>
 
-                        <h4>4957</h4>
-                        <p>Happy Users</p>
+            <div id="creativity_milestone">
+                <div class="milestone">
 
-                    </article>
+                    <h4>4957</h4>
+                    <p>Happy Users</p>
 
-                    <article>
+                </div class="milestone">
 
-                        <h4>1599</h4>
-                        <p>Complete Projects</p>
+                <div class="milestone">
 
-                    </article>
-                </div>
+                    <h4>1599</h4>
+                    <p>Complete Projects</p>
 
-                <button><a href="">Learn More</a></button>
+                </div class="milestone">
             </div>
 
-            <img src="assets/img/creativity.png" alt="creativity">
-
+            <button><a href="">Learn More</a></button>
         </div>
 
+        <img src="assets/img/creativity.png" alt="creativity">
 
-        <div id="forfaits">
+    </section>
 
-            <h2>Our Pricing</h2>
-            <p>It is a long established fact that a reader will be of a page when established fact looking at its layout.</p>
+    <section id="pricing">
 
-            <div id="forfait_cards">
-                <?php
+        <h2>Our Pricing</h2>
+        <p>It is a long established fact that a reader will be of a page when established fact looking at its layout.</p>
 
-                $pricings = getPricings();
+        <div id="pricing_cards">
+            <?php
 
-                foreach ($pricings as $pricing) {
+            $pricings = getPricings();
 
-                ?>
-                    <div class="forfait_card">
+            foreach ($pricings as $pricing) {
 
-                        <?php
+            ?>
+                <div class="pricing_card">
+
+                    <?php
 
 
-                        if ($pricing['sale'] > 0 && $pricing['sale'] < 100) {
-                            echo "<aside class='sale_box'><p>" . $pricing['sale'] . "% sale</p></aside>";
-                        }
+                    if ($pricing['sale'] > 0 && $pricing['sale'] < 100) {
+                        echo "<aside class='sale_box'><p>" . $pricing['sale'] . "% sale</p></aside>";
+                    }
 
-                        ?>
+                    ?>
 
-                        <h4><?= $pricing['name'] ?></h4>
+                    <h4><?= $pricing['name'] ?></h4>
 
-                        <div class="price">
-                            <p>$</p>
-                            <h5><?= $pricing['price'] ?></h5>
-                            <p>/month</p>
-                        </div>
+                    <div class="price">
+                        <p>$</p>
+                        <h5><?= $pricing['price'] ?></h5>
+                        <p>/month</p>
+                    </div>
 
-                        <div class="forfait_advantages">
+                    <div class="pricing_advantages">
 
-                            <div class="bandwith">
-                                <span class="advantage_name">
-                                    <p><i class="fa-regular fa-circle-check"></i>Bandwith</p>
-                                </span>
-                                <span class="advantage_value">
-                                    <p>
-                                        <?php
+                        <div class="bandwith">
+                            <span class="advantage_name">
+                                <p><i class="fa-regular fa-circle-check"></i>Bandwith</p>
+                            </span>
+                            <span class="advantage_value">
+                                <p>
+                                    <?php
 
-                                            if ($pricing['bandwidth'] >= 1000) {
-                                                $pricing['bandwidth'] /= 1000;
-                                                $dataType = "GB";
-                                            } else {
-                                                $dataType = "MB";
-                                            }
-
-                                            echo $pricing['bandwidth'] . $dataType;
-
-                                        ?>
-                                    </p>
-                                </span>
-                            </div>
-
-                            <div class="onlinespace">
-                                <span class="advantage_name">
-                                    <p><i class="fa-regular fa-circle-check"></i>Onlinespace</p>
-                                </span>
-                                <span class="advantage_value">
-                                    <p>
-                                        <?php
-
-                                        if ($pricing['onlineSpace'] >= 1000) {
-                                            $pricing['onlineSpace'] /= 1000;
+                                        if ($pricing['bandwidth'] >= 1000) {
+                                            $pricing['bandwidth'] /= 1000;
                                             $dataType = "GB";
                                         } else {
                                             $dataType = "MB";
                                         }
 
-                                        echo $pricing['onlineSpace'] . $dataType;
+                                        echo $pricing['bandwidth'] . $dataType;
 
-                                        ?>
-                                    </p>
-                                </span>
-                            </div>
-
-                            <div class="support">
-                                <?php
-
-                                if ($pricing['support'] == '1') {
-                                    $result = "Yes";
-                                    $icon = "<i class='fa-regular fa-circle-check'></i>";
-                                } else {
-                                    $result = "No";
-                                    $icon = "<i class='fa-regular fa-circle-xmark'></i>";
-                                }
-
-                                ?>
-                                <span class="advantage_name">
-                                    <p><?= $icon ?>Support</p>
-                                </span>
-                                <span class="advantage_value">
-                                    <p><?= $result ?></p>
-                                </span>
-                            </div>
-
-                            <div class="domain">
-                                <span class="advantage_name">
-                                    <p><i class="fa-regular fa-circle-check"></i>Domain</p>
-                                </span>
-                                <span class="advantage_value">
-                                    <p><?= $pricing['domain'] ?></p>
-                                </span>
-                            </div>
-
-                            <div class="hiddenfees">
-                                <?php
-
-                                if ($pricing['hiddenFees'] == '1') {
-                                    $result = "Yes";
-                                    $icon = "<i class='fa-regular fa-circle-xmark'></i>";
-                                } else {
-                                    $result = "No";
-                                    $icon = "<i class='fa-regular fa-circle-check'></i>";
-                                }
-
-                                ?>
-                                <span class="advantage_name">
-                                    <p><?= $icon ?>Hidden Fees</p>
-                                </span>
-                                <span class="advantage_value">
-                                    <p><?= $result ?></p>
-                                </span>
-                            </div>
-
+                                    ?>
+                                </p>
+                            </span>
                         </div>
 
-                        <button><a href=''>Join Now</a></button>
+                        <div class="onlinespace">
+                            <span class="advantage_name">
+                                <p><i class="fa-regular fa-circle-check"></i>Onlinespace</p>
+                            </span>
+                            <span class="advantage_value">
+                                <p>
+                                    <?php
+
+                                    if ($pricing['onlineSpace'] >= 1000) {
+                                        $pricing['onlineSpace'] /= 1000;
+                                        $dataType = "GB";
+                                    } else {
+                                        $dataType = "MB";
+                                    }
+
+                                    echo $pricing['onlineSpace'] . $dataType;
+
+                                    ?>
+                                </p>
+                            </span>
+                        </div>
+
+                        <div class="support">
+                            <?php
+
+                            if ($pricing['support'] == '1') {
+                                $result = "Yes";
+                                $icon = "<i class='fa-regular fa-circle-check'></i>";
+                            } else {
+                                $result = "No";
+                                $icon = "<i class='fa-regular fa-circle-xmark'></i>";
+                            }
+
+                            ?>
+                            <span class="advantage_name">
+                                <p><?= $icon ?>Support</p>
+                            </span>
+                            <span class="advantage_value">
+                                <p><?= $result ?></p>
+                            </span>
+                        </div>
+
+                        <div class="domain">
+                            <span class="advantage_name">
+                                <p><i class="fa-regular fa-circle-check"></i>Domain</p>
+                            </span>
+                            <span class="advantage_value">
+                                <p><?= $pricing['domain'] ?></p>
+                            </span>
+                        </div>
+
+                        <div class="hiddenfees">
+                            <?php
+
+                            if ($pricing['hiddenFees'] == '1') {
+                                $result = "Yes";
+                                $icon = "<i class='fa-regular fa-circle-xmark'></i>";
+                            } else {
+                                $result = "No";
+                                $icon = "<i class='fa-regular fa-circle-check'></i>";
+                            }
+
+                            ?>
+                            <span class="advantage_name">
+                                <p><?= $icon ?>Hidden Fees</p>
+                            </span>
+                            <span class="advantage_value">
+                                <p><?= $result ?></p>
+                            </span>
+                        </div>
 
                     </div>
 
-                <?php
+                    <a href="">Join now</a>
 
-                }
+                </div>
 
-                ?>
+            <?php
 
-            </div>
-            
-            <a href="paneladmin.php">Admin</a>
+            }
+
+            ?>
 
         </div>
-
-
+        
+        <a href="paneladmin.php">Admin</a>
 
     </section>
 
