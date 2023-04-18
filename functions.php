@@ -42,5 +42,10 @@ if (isset($_GET['action'])) {
             }
 
         break;
+
+        case "addMember":
+            addMember($id);
+
+            header("Location:index.php#pricing");
     }
 }
