@@ -50,7 +50,7 @@ h2 {
     cursor: pointer;
 }
 
-.price_update_card label:last-of-type input {
+.price_update_card input[type="submit"] {
     background-color:#188bfe;
     width:100%;
     color:white;
@@ -60,7 +60,7 @@ h2 {
     transition:.4s;
 }
 
-.price_update_card label:last-of-type input:hover {
+.price_update_card input[type="submit"]:hover {
     opacity: 80%;
     transform:translateY(-5px)
 }
