@@ -1,5 +1,6 @@
 <?php
 
+session_start();
 require 'db-functions.php';
 
 ?>
@@ -405,6 +406,15 @@ require 'db-functions.php';
         <h2>Our Pricing</h2>
         <p>It is a long established fact that a reader will be of a page when established fact looking at its layout.</p>
 
+        <?php
+        
+        if (isset($_SESSION['message'])) {
+            echo $_SESSION['message'];
+            unset($_SESSION['message']);
+        }  
+        
+        ?>
+
         <div id="pricing_cards">
             <?php
 
@@ -423,7 +433,7 @@ require 'db-functions.php';
 
                     if ($pricing['sale'] > 0 && $pricing['sale'] < 100) {
                         echo "<aside class='sale_box'><p>" . $pricing['sale'] . "% sale</p></aside>";
-                    }
+                    }                
 
                     ?>
 
