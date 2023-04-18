@@ -24,7 +24,7 @@ require 'db-functions.php';
 </head>
 
 <body>
-    <div id="home_cover">
+    <section id="home_cover">
         <header>
 
             <h2>Kucra</h2>
@@ -115,9 +115,9 @@ require 'db-functions.php';
             </div>
 
 
-    </div>
+    </section>
 
-    <div id="products_features">
+    <section id="products_features">
 
         <h2>Products Features</h2>
 
@@ -146,14 +146,14 @@ require 'db-functions.php';
         </div>
 
 
-    </div>
+    </section>
 
-    <div id="howitworks">
+    <section id="howitworks">
         <h2>How It Works ?</h2>
         <p>It is a long established fact that a reader will be of a page established fact looking at its layout.</p>
-    </div>
+    </section>
 
-    <div id="team">
+    <section id="team">
 
         <h2>We're dynamic team of talented people of innovative & marketing expert</h2>
         <p>To achieve this, it would be necessary to have uniform grammar, pronunciation and more commun words,
@@ -245,9 +245,9 @@ require 'db-functions.php';
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div id="started_w_kucra">
+    <section id="started_w_kucra">
 
         <h3>Let's get started with Kucra</h3>
         <p>They are a good way to get you started if you want to build something similar or use from existing apps
@@ -256,12 +256,12 @@ require 'db-functions.php';
         <button><a href="">Get Started</a></button>
         <!-- <a><input type='button'>Get Started</a> -->
 
-    </div>
+    </section>
 
-    <!-- <div id="parallax">
-                </div>  -->
+    <!-- <section id="parallax">
+                </section>  -->
 
-    <div id="clientsays">
+    <section id="clientsays">
         <h2>What your client says</h2>
         <p>The Big Oxmox Advised her not to do so, because there were thousnads of bad Commas, wild Question Marks and devious pulvinar
             metus molestie sed Semikoli.</p>
@@ -365,9 +365,9 @@ require 'db-functions.php';
             <img src="assets/img/05.png" alt="coffee_market">
         </div>
 
-    </div>
+    </section>
 
-    <div id="pricing">
+    <section id="pricing">
 
         <div id="pricing_header">
 
@@ -548,9 +548,9 @@ require 'db-functions.php';
 
 
 
-    </div>
+    </section>
 
-    <div id="blog">
+    <section id="blog">
 
         <h2>Our Blog</h2>
         <p>It is a long established fact that a reader will be of a page when established fact looking at its layout.</p>
@@ -647,11 +647,11 @@ require 'db-functions.php';
 
         </div>
 
-    </div>
+    </section>
 
-    <div id="scroll_container">
+    <section id="scroll_container">
         <a href="#home_cover"><i class="fa-solid fa-arrow-up"></i></a>
-    </div>
+    </section>
 
     </main>
 
