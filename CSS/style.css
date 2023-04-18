@@ -122,31 +122,24 @@ main p {
     margin: 5% 0;
 }
 
-#mail_sub {
+#intro form {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 90%;
-    height: 50px;
-    border-radius: 30px;
     background-color: rgb(255, 255, 255, 0.5);
-    padding: 0px 0.3em;
-    padding-left: 3%;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0 10px;
+    height: 40px;
 }
 
-#mail_sub form {
-    display: flex;
-    height:100%;
-}
-
-#mail {
+#intro form input:first-of-type {
     background: transparent;
     border: none;
     font-size: 16px;
     outline:none;
 }
 
-#mail_sub button {
+#intro form button {
     display: flex;
     background: transparent;
     border: none;
@@ -160,29 +153,26 @@ main p {
     border-radius: 30px; 
 }
 
-#mail_sub button:hover {
-    opacity:80%;
-}
-
-#intro button a {
-    display: flex;
+#intro form input:last-of-type {
     font-size: 17px;
-    color: white;
-    text-decoration: none;
     width: 100%;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
+    color: white;
+    background-color: #3d8da8;
+    border: none;
+    text-decoration: none;
+    height: 80%;
     border-radius: 30px;
+    transition:.5s;
+    cursor:pointer;
 }
 
 ::placeholder {
     opacity: 75%;
 }
 
-#submit_mail:hover {
+#intro form input:last-of-type:hover {
     opacity: 70%;
-    left:295px;
+    transform: translateX(5px);
 }
 
 /****************************************** PRODUCT FEATURES **********************************************/

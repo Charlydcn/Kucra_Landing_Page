@@ -100,13 +100,13 @@ require 'db-functions.php';
 
                     <p>Carefully crafted after analysing the needs of different industries and the design achieves a great balance between purpose & presentation</p>
 
-                    <div id="mail_sub">
+                    <form action="submit">
 
-                        <form action="submit">
-                            <input type="text" id="mail" placeholder="Enter your email" autocomplete="off">
-                        </form>
+                        <input type="text" name="mail" placeholder="Enter your email" autocomplete="off">
 
-                        <button><a href="index.html">SUBSCRIBE</a></button>
+                        <input type="submit" name="submit" value="SUBSCRIBE">
+
+                    </form>
 
                     </div>
 
@@ -417,6 +417,9 @@ require 'db-functions.php';
 
                     <?php
 
+                    if ($pricing['nbMember'] > 5) {
+                        echo "Déjà " . $pricing['nbMember'] . " adhérents !";
+                    }
 
                     if ($pricing['sale'] > 0 && $pricing['sale'] < 100) {
                         echo "<aside class='sale_box'><p>" . $pricing['sale'] . "% sale</p></aside>";
@@ -529,7 +532,7 @@ require 'db-functions.php';
 
                     </div>
 
-                    <a href="">Join now</a>
+                    <a href="functions.php?action=addMember&id=<?= $pricing['id_pricing'] ?>">Join now</a>
 
                 </div>
 
