@@ -999,6 +999,22 @@ a:visited {
     font-weight: 200;
 }
 
+a[href="paneladmin.php"] {
+    width:fit-content;
+    display: flex;
+    margin:auto;
+    text-decoration: none;
+    color:white;
+    background-color:#3c3c3c;
+    border-radius: 5px;
+    padding:0.5rem 1rem;
+    transition: .3s;
+}
+
+a[href="paneladmin.php"]:hover {
+    transform: translateX(5px);
+}
+
 /****************************************** FOOTER **********************************************/
 
 footer {
