@@ -870,14 +870,18 @@ a:visited {
     border-bottom-left-radius: 10px;
 }
 
-.price_success_msg {
+.success_msg, .error_msg {
     font-size: 2rem;
-    background-color: #3f8efd;
+    background-color: #86c0e6;
     width: fit-content;
     padding: 0.5rem 1rem;
     border-radius: 10px;
     color: white;
     margin: 1rem auto
+}
+
+.error_msg {
+    background-color: rgb(204, 106, 106);
 }
 
 /* PRICE */
