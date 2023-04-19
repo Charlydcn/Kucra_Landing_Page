@@ -4,7 +4,7 @@ function dbConnect()
 {
     try {
 
-        $db = new PDO('mysql:host=localhost;dbname=forfaits;charset=utf8', 'root', '');
+        $db = new PDO('mysql:host=localhost;dbname=kucra;charset=utf8', 'root', '');
     } catch (PDOException $e) {
 
         print "Erreur !: " . $e->getMessage() . "<br/>";
