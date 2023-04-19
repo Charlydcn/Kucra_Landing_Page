@@ -39,15 +39,45 @@ if (isset($_GET['action'])) {
                     }
                 }
     
-                header("Location:paneladmin.php");
             }
+            
+            header("Location:paneladmin.php");
 
         break;
 
         case "addMember":
             addMember($id);
-            $_SESSION['message'] = "<p class='price_success_msg'>Thanks for joining us !</p>";
+            $_SESSION['message'] = "<p class='success_msg'>Thanks for joining us !</p>";
 
             header("Location:index.php#pricing");
+
+        break;
+
+        case "subMail":
+            $email = filter_input(INPUT_POST, "email", FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+            
+            if ($email) {
+
+                if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
+
+                    if (checkEmailExists($email) < 1) { // Si l'adresse e-mail n'est pas déjà présente en BDD;
+
+                        subMail($email);
+                        $_SESSION['message'] = "<p class='success_msg'>Thanks for joining us !</p>";
+                        
+                    } else {
+
+                        $_SESSION['message'] = "<p class='error_msg'>E-Mail already subscribed</p>";
+                    }
+
+                } else {
+
+                    $_SESSION['message'] = "<p class='error_msg'>Incorrect E-Mail</p>";
+                }
+            }
+
+            header("Location:index.php");
+            
+        break;
     }
 }

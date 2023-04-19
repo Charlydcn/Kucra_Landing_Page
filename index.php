@@ -103,9 +103,18 @@ require 'db-functions.php';
 
                     <p>Carefully crafted after analysing the needs of different industries and the design achieves a great balance between purpose & presentation</p>
 
-                    <form action="submit">
+                    <?php
+                    
+                    if (isset($_SESSION['message'])) {
+                        echo $_SESSION['message'];
+                        unset($_SESSION['message']);
+                    } 
 
-                        <input type="text" name="mail" placeholder="Enter your email" autocomplete="off">
+                    ?>
+
+                    <form action="functions.php?action=subMail" method="POST" autocomplete="off">
+
+                        <input type="text" name="email" placeholder="Enter your email" autocomplete="off">
 
                         <input type="submit" name="submit" value="SUBSCRIBE">
 

@@ -14,7 +14,8 @@ function dbConnect()
     return $db;
 }
 
-function getPricings() {
+function getPricings()
+{
     $db = dbConnect();
     $sql =
         "SELECT *
@@ -51,7 +52,8 @@ function updatePricing($name, $price, $sale, $bandwidth, $onlineSpace, $support,
     $stmt->execute();
 }
 
-function addMember($id) {
+function addMember($id)
+{
 
     $db = dbConnect();
     $sql = 
@@ -62,4 +64,36 @@ function addMember($id) {
     $stmt = $db->prepare($sql);
     $stmt->bindValue(':id', $id);
     $stmt->execute();    
+}
+
+function subMail($email)
+{
+    $db = dbConnect();
+    $sql = 
+        "INSERT INTO email (email)
+        VALUES (:email)";
+
+    $stmt = $db->prepare($sql);
+    $stmt->bindValue(':email', $email);
+    $stmt->execute();    
+
+}
+
+function checkEmailExists($email)
+{
+    $db = dbConnect();
+
+    $sql = 
+        "SELECT COUNT(*)
+        FROM email
+        WHERE email = :email";
+
+    $stmt = $db->prepare($sql);
+    $stmt->bindValue(':email', $email);
+    $stmt->execute();
+
+    $count = $stmt->fetchColumn();
+
+    return $count;
+
 }
