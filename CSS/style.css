@@ -41,15 +41,20 @@ header h2 {
     flex-grow: 0.2;
 }
 
-#responsive_nav {
+#nav_default {
+    display: flex;
+}
+
+#res_nav {
     display:none;
 }
 
 nav {
     display: flex;
     flex-direction: row;
-    width:100%;
-    padding:0 5%;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
 }
 
 nav div ul {
@@ -63,20 +68,20 @@ nav a {
     text-decoration: none;
     padding:1em;
     font-size: 1.1em;
-    transition: .5s;
+    transition: .3s;
 }
 
 nav a:hover {
-    opacity:80%;
+    opacity:70%;
 }
 
-#nav_links {
+.nav_links {
     display: flex;
     align-items: center;
     margin:auto;
 }
 
-#nav_social {
+.nav_social {
     display: flex;
     align-items: center;
 }
@@ -97,6 +102,7 @@ nav a:hover {
     justify-content: center;
     height: auto;
     width: 40%;
+    gap:2rem;
 }
 
 #home_cat {
@@ -1155,7 +1161,7 @@ position: absolute;
         display: none;
     }
 
-    #responsive_nav {
+    #res_nav {
         display: flex;
         width: 50%;
         justify-content: center;
@@ -1375,7 +1381,7 @@ position: absolute;
         width:70%;
     }
 
-    #responsive_nav {
+    #res_nav {
         display: flex;
         width: 50%;
         margin: auto;

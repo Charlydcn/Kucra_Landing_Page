@@ -31,11 +31,11 @@ require 'db-functions.php';
             <h2>Kucra</h2>
 
 
-            <div id="responsive_nav">
+            <nav>
 
-                <nav id="res_nav">
+                <div id="res_nav">
 
-                    <div id="nav_links">
+                    <div class="nav_links">
 
                         <ul>
                             <li><a href="index.php" class="nav_text">HOME</a></li>
@@ -50,7 +50,7 @@ require 'db-functions.php';
 
                     </div>
 
-                    <div id="nav_social">
+                    <div class="nav_social">
 
                         <ul>
                             <li><a href="https://www.facebook.com" class="social_medias_text"><i class="fa-brands fa-facebook-f"></i></a></li>
@@ -60,31 +60,33 @@ require 'db-functions.php';
 
                     </div>
 
-                </nav>
+                </div>
 
-            </div>
+                <div id="nav_default">
 
-            <nav id="nav_default">
-                <div id="nav_links">
-                    <ul>
-                        <li><a href="index.html" class="nav_text">HOME</a></li>
-                        <li><a href="#products_features" class="nav_text">FEATURES</a></li>
-                        <li><a href="#clientsays" class="nav_text">CLIENT</a></li>
-                        <li><a href="#pricing" class="nav_text">PRICING</a></li>
-                        <li><a href="#howitworks" class="nav_text">FAQ</a></li>
-                        <li><a href="#team" class="nav_text">ABOUT</a></li>
-                        <li><a href="#blog" class="nav_text">BLOG</a></li>
-                        <li><a href="#parallax" class="nav_text">CONTACT</a></li>
+                    <div class="nav_links">
                         <ul>
-                </div>
+                            <li><a href="index.html" class="nav_text">HOME</a></li>
+                            <li><a href="#products_features" class="nav_text">FEATURES</a></li>
+                            <li><a href="#clientsays" class="nav_text">CLIENT</a></li>
+                            <li><a href="#pricing" class="nav_text">PRICING</a></li>
+                            <li><a href="#howitworks" class="nav_text">FAQ</a></li>
+                            <li><a href="#team" class="nav_text">ABOUT</a></li>
+                            <li><a href="#blog" class="nav_text">BLOG</a></li>
+                            <li><a href="#parallax" class="nav_text">CONTACT</a></li>
+                        <ul>
+                    </div>
 
-                <div id="nav_social">
-                    <ul>
-                        <li><a href="https://www.facebook.com" class="social_medias_text"><i class="fa-brands fa-facebook-f"></i></a></li>
-                        <li><a href="https://www.twitter.com" class="social_medias_text"><i class="fa-brands fa-twitter"></i></a></li>
-                        <li><a href="https://www.instagram.com" class="social_medias_text"><i class="fa-brands fa-instagram"></i></a></li>
-                    </ul>
+                    <div class="nav_social">
+                        <ul>
+                            <li><a href="https://www.facebook.com" class="social_medias_text"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href="https://www.twitter.com" class="social_medias_text"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="https://www.instagram.com" class="social_medias_text"><i class="fa-brands fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+
                 </div>
+            
             </nav>
 
         </header>
