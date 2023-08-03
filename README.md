@@ -1,4 +1,6 @@
-![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
-<h1>⚡First big HTML/CSS exercise on a fictionnal website</h1>
+<h1>Fictive landing page website</h1><br>
+Front-end based on a mockup, C.R.U.D dashboard, email storage in the database..
+<br>
+<br>
+
+![SkillIcons](https://skillicons.dev/icons?i=php,js,css,html,figma,vscode)
