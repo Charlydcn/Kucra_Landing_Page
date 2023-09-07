@@ -4,10 +4,10 @@
 </p>
 
 <img src="https://hatscripts.github.io/circle-flags/flags/fr.svg" width="48">
-<h2>Kucra est mon premier projet réalisé lors de ma formation chez ELAN Formation, une landing page simple, responsive, et à partir du maquette donnée</h2>
+<h2>Kucra est mon premier projet réalisé lors de ma formation chez ELAN Formation, une landing page, responsive, faite à partir d'une maquette donnée</h2>
 
 <img src="https://hatscripts.github.io/circle-flags/flags/gb.svg" width="48">
-<h2>Kucra is my first project completed during my training at ELAN Formation. It's a simple, responsive landing page created based on a provided design mockup</h2>
+<h2>Kucra is my first project completed during my training at ELAN Formation. It's a responsive landing page created based on a provided design mockup</h2>
 
 ## ✨ Demo
 <h3>Home</h3>
