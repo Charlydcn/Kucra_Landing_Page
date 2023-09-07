@@ -11,25 +11,25 @@
 
 ## ✨ Demo
 <h3>Home</h3>
-<img src="https://github.com/Charlydcn/Kucra_Landing_Page/tree/main/assets/img/demo/home.gif">
+<img src="https://raw.githubusercontent.com/Charlydcn/Kucra_Landing_Page/main/assets/img/demo/home.gif">
 
 <h3>Team</h3>
-<img src="https://github.com/Charlydcn/Kucra_Landing_Page/tree/main/assets/img/demo/team.gif">
+<img src="https://raw.githubusercontent.com/Charlydcn/Kucra_Landing_Page/main/assets/img/demo/team.gif">
 
 <h3>Features</h3>
-<img src="https://github.com/Charlydcn/Kucra_Landing_Page/tree/main/assets/img/demo/features.gif">
+<img src="https://raw.githubusercontent.com/Charlydcn/Kucra_Landing_Page/main/assets/img/demo/features.gif">
 
 <h3>Parallax</h3>
-<img src="https://github.com/Charlydcn/Kucra_Landing_Page/tree/main/assets/img/demo/parallax.gif">
+<img src="https://raw.githubusercontent.com/Charlydcn/Kucra_Landing_Page/main/assets/img/demo/parallax.gif">
 
 <h3>Client says</h3>
-<img src="https://github.com/Charlydcn/Kucra_Landing_Page/tree/main/assets/img/demo/clientsays.gif">
+<img src="https://raw.githubusercontent.com/Charlydcn/Kucra_Landing_Page/main/assets/img/demo/clientsays.gif">
 
 <h3>Creativity</h3>
-<img src="https://github.com/Charlydcn/Kucra_Landing_Page/tree/main/assets/img/demo/creativity.gif">
+<img src="https://raw.githubusercontent.com/Charlydcn/Kucra_Landing_Page/main/assets/img/demo/creativity.gif">
 
 <h3>Pricing</h3>
-<img src="https://github.com/Charlydcn/Kucra_Landing_Page/tree/main/assets/img/demo/pricing.gif">
+<img src="https://raw.githubusercontent.com/Charlydcn/Kucra_Landing_Page/main/assets/img/demo/pricing.gif">
 
 <h3>Blog</h3>
-<img src="https://github.com/Charlydcn/Kucra_Landing_Page/tree/main/assets/img/demo/blog.gif">
+<img src="https://raw.githubusercontent.com/Charlydcn/Kucra_Landing_Page/main/assets/img/demo/blog.gif">
