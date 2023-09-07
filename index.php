@@ -28,10 +28,10 @@ require 'db-functions.php';
     <section id="home_cover">
         <header>
 
-            <h2>Kucra</h2>
-
-
+            
+            
             <nav>
+                <h2>Kucra</h2>
 
                 <div id="res_nav">
 
@@ -62,7 +62,6 @@ require 'db-functions.php';
 
                 </div>
 
-                <div id="nav_default">
 
                     <div class="nav_links">
                         <ul>
@@ -85,7 +84,6 @@ require 'db-functions.php';
                         </ul>
                     </div>
 
-                </div>
             
             </nav>
 
